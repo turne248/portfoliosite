@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Motion Graphic Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700|Open+Sans" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	</head>
+	<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/rt logo2.png" alt="My Logo"></a>
+        <div id="navbar2" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_me.html">About Me</a></li>
+              <li class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="motion.html">Motion</a></li>
+                    <li><a href="graphics.html">Graphics</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+        <div id="navOverlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about_me.html">About Me</a>
+              <a href="motion.html">Motion</a>
+              <a href="graphics.html">Graphics</a>
+              <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+          <header class="menu">
+            <span style="color:#fff; font-size:45px; cursor:pointer; padding: 15px; float:right;" onclick="openNav()">&#9776;</span>
+          </header>
+    </nav>
+    <div class="thumbnails">
+      <a class="popup-video" href="images/EMBAC.mp4"><img src="images/EMBAC_thumb.png" alt="EMBAC"></a>
+      <a class="popup-video" href="images/ECON.mp4"><img src="images/ECON_thumb.jpg" alt="ECON"></a>
+      <a class="popup-video" href="images/EXEC.mp4"><img src="images/EXEC_thumb.png" alt="EXEC"></a>
+      <a class="popup-video" href="images/FallBlitz.mp4"><img src="images/FallBlitz_thumb.png" alt="blitz"></a>
+    </div>
+    <div class="footer-holder">
+      <div class="footer col-md-12">
+        <h3>Designed and Developed by Robby Turner 2019</h3>
+      </div>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.popup-video').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+	});
+    //pulls from Scroll Reveal plugin, effects objects in window
+    window.sr = ScrollReveal();
+    //affects specifically the images titled work
+    sr.reveal('.work');
+    //Overlay navigation fill screen when navOverlay menu is clicked
+    function openNav() {
+    document.getElementById("navOverlay").style.height = "100%"; }
+    //Overlay navigation closes when x is clicked
+    function closeNav() {
+    document.getElementById("navOverlay").style.height = "0%"; }
+	</script>
+	</body>
+</html>
