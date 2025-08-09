@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>My Work</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	</head>
+	<body onload="randombg()">
+	<!--<section class="bg">
+	Desktop Nav Bar -->	
+    <nav class="navbar navbar-default">
+  		<div class="container-fluid">
+        	<div class="navbar-header">
+          		<a class="navbar-brand" href="index.html"><img src="images/logo_2.png" alt=""></a>
+       		</div>
+        	<div id="navbar2" class="navbar-collapse collapse">
+    			<ul class="nav navbar-nav navbar-right">
+      				<!--<li><a href="about_me.html">About</a></li>-->
+      		    	<li><a href="work.html">Work</a></li>
+      				<li><a href="mailto:robbyturner593@gmail.com">Contact</a></li>
+    			</ul>
+  			</div>
+      </div>
+		<!-- Mobile Nav Bar -->
+        <div id="navOverlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <!--<a href="about_me.html">About Me</a>-->
+			  <a href="work.html">Work</a>	
+              <a href="mailto:robbyturner593@gmail.com">Contact</a>
+            </div>
+        </div>
+          <header class="menu">
+            <span style="color:#fff; font-size:45px; cursor:pointer; padding: 15px; float:right;" onclick="openNav()">&#9776;</span>
+          </header>
+		</nav>
+   	 <div class="about_me">
+      	<h1 class="section__title section__title--intro">My Work</h1>
+		<span class="border"></span>
+		<!--<img src="" alt="" class="";</img>-->
+     </div>
+	 <div class="side">
+   		<!--<h3>Title Here</h3>-->
+  	 </div>
+	 <div class="client-content">
+	 	<div class="row">
+	 		<div class="work-col">
+	 			<div class="img-wrapper">
+	 				<a href="pvc.html">
+	 				<img src="images/pvc-01.png">
+	 				</a>
+	 			</div>
+	 			<h3 class="work_title">Purdue Vinyl Club</h3>
+	 			<p class="work_desc">Created club merchandise and advertising for student organization</p>
+	 			<p class="work_cat">Illustration / Branding / Print / Typography</p>
+	 		</div>
+	 		<div class="work-col">
+	 			<div class="img-wrapper">
+	 				<a href="kran.html">
+	 					<img src="images/kran-thumb.png">
+	 				</a>
+	 			</div>
+	 			<h3 class="work_title">Krannert Digital Signage</h3>
+	 			<p class="work_desc">Developed still and motion graphics to be viewed in university building displays and on social media.</p>
+	 			<p class="work_cat">Illustration / Branding / Animation</p>
+	 		</div>
+	 		<div class="work-col">
+	 			<div class="img-wrapper">
+	 				<a href="cac.html">
+	 					<img src="images/cac-thumb.png">
+	 				</a>
+	 			</div>
+	 			<h3 class="work_title">Computational Arts Circle</h3>
+	 			<p class="work_desc">Created club merchandise and advertising for student organization. Featured own original works in art gallery.</p>
+	 			<p class="work_cat">Illustration / Branding / Print / Typography</p>
+	 		</div>
+	 	</div>
+	 	<div class="row">
+	 		<div class="work-col">
+	 			<div class="img-wrapper">
+	 				<a href="classes.html">
+	 					<img src="images/class-thumb.png">
+	 				</a>
+	 			</div>
+	 			<h3 class="work_title">Class Projects</h3>
+	 			<p class="work_desc">A collection of works I completed for courses throughout my time at Purdue that I take pride in.</p>
+	 			<p class="work_cat">Illustration / Branding / Typography / Animation</p>
+	 		</div>
+	 		<div class="work-col">
+	 			<div class="img-wrapper">
+	 				<a href="honors.html">
+	 					<img src="images/honors_thumb_2.gif">
+	 				</a>
+	 			</div>
+	 			<h3 class="work_title">Honors Scholarly Project</h3>
+	 			<p class="work_desc">Conducted an interdisciplanary research project combining areas of philosophy and contemporary media studies.</p>
+	 			<p class="work_cat">Illustration / Typography / Animation</p>
+	 		</div>
+	 		<div class="work-col">
+	 			<div class="img-wrapper">
+	 				<a href="misc.html" title="Miscellaneous">
+	 					<img  id="bg-6">
+	 				</a>
+	 			</div>
+	 			<h3 class="work_title">Miscellaneous</h3>
+	 			<p class="work_desc">Created a number of no-stakes designs for fun and to improve my abilities</p>
+	 			<p class="work_cat"></p>
+	 		</div>
+	 	</div>
+	 </div>
+	<!--</section>
+	 Icons -->
+    <section class="footer">
+		<div class="columns">
+          <div class="footer-col">
+			 <p>Designed + Developed by Robby Turner</p>
+          </div>
+          <div class="footer-col">
+			 <h3>Contact</h3>
+			  <ul class="contact-list">
+			  	<li class="contact-list__Item">
+			  		<a href="resume.pdf">
+						<i class="far fa-file"></i>
+					</a>
+			  	</li>
+				<li>
+					<a href="mailto:robbyturner593@gmail.com">
+						<i class="far fa-envelope"></i>
+					</a>  
+				</li>  
+			  </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect with Me</h3>
+			<ul class="social-list">
+			<li class="social-list__item">
+        		<a href="https://dribbble.com/turne248">
+					<i class="fa fa-dribbble"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+        		<a href="https://github.com/turne248">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+      		<li class="social-list__item">
+        		<a href="http://www.linkedin.com/in/robby-turner-0248">
+					<i class="fa fa-linkedin"></i>
+				</a>
+      		</li>
+		  </ul>
+          </div>
+       </div>
+    </section>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script src="https://use.fontawesome.com/739e625e0b.js"></script>
+    <script type="text/javascript">
+      //pulls from Scroll Reveal plugin, effects objects in window
+      ScrollReveal().reveal('.row', { distance: '50px' , delay: 700 });
+      //affects specifically the images titled       
+      //sr.reveal('.row', {delay: 700});
+      //Overlay navigation fill screen when navOverlay menu is clicked
+      function openNav() {
+      document.getElementById("navOverlay").style.height = "100%"; }
+      //Overlay navigation closes when x is clicked
+      function closeNav() {
+      document.getElementById("navOverlay").style.height = "0%"; }
+      function randombg() {
+      	var random=Math.floor(Math.random() * 2) + 0;
+      	var bg = ["images/misc-thumb.png", 
+      	"images/misc-thumb-2.png"
+      	];
+      document.getElementById("bg-6").src=bg[random]; 
+      }
+	  </script>
+	</body>
+</html>
