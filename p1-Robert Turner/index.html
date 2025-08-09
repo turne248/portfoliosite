@@ -1,131 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 	<head>
 		<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Home</title>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	</head>
 	<body>
+	<section class="bg">
+	<!-- Desktop Nav Bar -->	
     <nav class="navbar navbar-default">
   		<div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html"><img src="images/rt logo2.png" alt="My Logo"></a>
-        </div>
-        <div id="navbar2" class="navbar-collapse collapse">
+        	<div class="navbar-header">
+          		<a class="navbar-brand" href="index.html"><img src="images/logo_2.png" alt=""></a>
+       		</div>
+        	<div id="navbar2" class="navbar-collapse collapse">
     			<ul class="nav navbar-nav navbar-right">
-       				<li class="active"><a href="index.html">Home</a></li>
-      				<li><a href="about_me.html">About Me</a></li>
-      		    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
-        				<ul class="dropdown-menu">
-          					<li><a href="motion.html">Motion</a></li>
-          					<li><a href="graphics.html">Graphics</a></li>
-        				</ul>
-              </li>
-      				<li><a href="contact.html">Contact Me</a></li>
+      				<!--<li><a href="about_me.html">About</a></li>-->
+      		    	<li><a href="work.html">Work</a></li>
+      				  <li><a href="mailto:robbyturner593@gmail.com">Contact</a></li>
     			</ul>
   			</div>
       </div>
+		<!-- Mobile Nav Bar -->
         <div id="navOverlay" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
               <a href="index.html">Home</a>
-              <a href="about_me.html">About Me</a>
-              <a href="motion.html">Motion</a>
-              <a href="graphics.html">Graphics</a>
-              <a href="contact.html">Contact Me</a>
+              <!--<a href="about_me.html">About Me</a>-->
+			        <a href="work.html">Work</a>	
+              <a href="mailto:robbyturner593@gmail.com">Contact</a>
             </div>
         </div>
           <header class="menu">
             <span style="color:#fff; font-size:45px; cursor:pointer; padding: 15px; float:right;" onclick="openNav()">&#9776;</span>
           </header>
 		</nav>
-    <div class="header">
-      <h1>Graphic Design | Motion Design</h1>
+   	 <section class="intro">
+      	<h1 class="section__title section__title--intro">Robby Turner</h1>
+		    <h2 class="section__subtitle section__subtitle--intro">motion design / graphic design / web</h2>
+		<!--<img src="" alt="" class="";</img>-->
+     </section>
+	 <div class="side">
+   		<!--<h3>Title Here</h3>-->
+  	 </div>
+	 <div class="main-content">
+    <div style="padding:75% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/808201065?h=56d108f078&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="demo-reel.mp4">
+      </iframe>
     </div>
-    <div class="slider-container">
-      <section class="center slider">
-			<div>
-        <img src="images/80's.png" alt="80s">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+		<div class="portfolio">
+        <div class="portfolio-item medium four" id="honors"> 
+          <a href="honors.html">Honors Scholarly Project</a>
+        </div>
+        <div class="portfolio-item large two" id="kran"><a href="kran.html">Krannert Digital Signage</a></div>
+    		<div class="portfolio-item medium one" id="pvc">
+          <a href="pvc.html">Purdue Vinyl Club</a>
+        </div>
+  		</div>
+		<!--<div class="portfolio">
+			<div class="portfolio-item large two" id="pvc">
+				<a href="pvc.html">Purdue Vinyl Club</a>
+			</div>
+      <div class="portfolio-item medium three" id="cac">
+          <a href="cac.html">Computational Arts Circle</a>
       </div>
-      <div>
-        <img src="images/beartrap.jpg" alt="beartrap">
-      </div>
-      <div>
-        <img src="images/tesselations.png" alt="tesselations">
-      </div>
-      <div>
-        <img src="images/mesh.png" alt="mesh">
-      </div>
-      <div>
-        <img src="images/vinyl.jpg" alt="vinyl">
-      </div>
-      </section>
-    </div>
-    <div class="icon-container">
-      <div class="col-md-4" style="margin-top: 30px;">
-        <a href="mailto:turne248@purdue.edu"><i class="fa fa-envelope"></i>
-        <span class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; border: 0;">email</span></a>
-      </div>
-      <div class="col-md-4" style="margin-top: 30px;">
-        <a href="https://github.com/turne248"><i class="fa fa-github"></i><span class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; border: 0;">github</span></a>
-      </div>
-      <div class="col-md-4" style="margin-top: 30px;">
-        <a href="http://www.linkedin.com/in/robby-turner-0248"><i class="fa fa-linkedin"></i><span class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; border: 0;">linkedin</span></a>
-      </div>
-    </div>
-    <div class="footer-holder">
-      <h3 style="margin-top: 30px;">Designed and Developed by Robby Turner 2019</h3>
-    </div>
-	  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    		<div class="portfolio-item medium three" id="misc"><a href="misc.html">Miscellaneous</a></div>
+  		</div>
+	 </div>-->
+	</section>
+	<!-- Icons -->
+    <section class="footer">
+		<div class="columns">
+          <div class="footer-col">
+			 <p>Designed + Developed by Robby Turner</p>
+          </div>
+          <div class="footer-col">
+			 <h3>Contact</h3>
+			  <ul class="contact-list">
+			  	<li class="contact-list__Item">
+			  		<a href="resume.pdf">
+						<i class="far fa-file"></i>
+					</a>
+			  	</li>
+				<li>
+					<a href="mailto:robbyturner593@gmail.com">
+						<i class="far fa-envelope"></i>
+					</a>  
+				</li>  
+			  </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect with Me</h3>
+			<ul class="social-list">
+			<li class="social-list__item">
+        		<a href="https://dribbble.com/turne248">
+					<i class="fa fa-dribbble"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+        		<a href="https://github.com/turne248">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+      		<li class="social-list__item">
+        		<a href="http://www.linkedin.com/in/robby-turner-0248">
+					<i class="fa fa-linkedin"></i>
+				</a>
+      		</li>
+		  </ul>
+          </div>
+       </div>
+    </section>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
     <script src="https://use.fontawesome.com/739e625e0b.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-	  <script type="text/javascript">
-      //image carousel slick enabled
-	    $(document).on('ready', function() {
-      //affects center div
-      $(".center").slick({
-        dots: true,     //dots enabled showing carousel progress
-        arrows: false,  //navigation arrows disabled
-        centerMode: true,  //place in center of window
-        infinite: true,   //repeat forever
-        slidesToShow: 3,  //how many slides visible in window
-        responsive: [     //respond to window size
-          {
-          breakpoint: 1024,     //change attributes when window is x pixels wide
-          settings: {
-            centerMode: true,
-            slidesToShow: 1,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        }, 
-        {
-          breakpoint: 600,
-          settings: {
-            centerMode: true,
-            slidesToShow: 1,
-            slidesToScroll: 0
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            centerMode: true,
-            slidesToShow: 1,
-            slidesToScroll: 0
-          }
-        }
-        ]
-      });
-      });
+    <script type="text/javascript">
+      //pulls from Scroll Reveal plugin, effects objects in window
+      window.sr = ScrollReveal();
+      //affects specifically the images titled       
+      sr.reveal('.portfolio', {distance: '50px' , delay: 800});
       //Overlay navigation fill screen when navOverlay menu is clicked
       function openNav() {
       document.getElementById("navOverlay").style.height = "100%"; }

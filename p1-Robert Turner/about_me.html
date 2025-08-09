@@ -1,74 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>About Me</title>
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700|Open+Sans" rel="stylesheet">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700|Open+Sans" rel="stylesheet">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html"><img src="images/rt logo2.png" alt="My Logo"></a>
-        </div>
-        <div id="navbar2" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="about_me.html">About Me</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="motion.html">Motion</a></li>
-                    <li><a href="graphics.html">Graphics</a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact Me</a></li>
-          </ul>
-        </div>
+	<section class="bg-2">
+	<!-- Desktop Nav Bar -->	
+    <nav class="navbar-2 navbar-default">
+  		<div class="container-fluid">
+        	<div class="navbar-header" id="header-2">
+          		<a class="navbar-brand" href="index.html"><img src="images/logo_4.png" alt="3"></a>
+       		</div>
+        	<div id="navbar2" class="navbar-collapse collapse">
+    			<ul class="nav navbar-nav navbar-right">
+      				<!--<li><a href="about_me.html">About</a></li>-->
+                <li><a href="work.html">Work</a></li>
+              <li><a href="mailto:robbyturner593@gmail.com">Contact</a></li>
+    			</ul>
+  			</div>
       </div>
+		<!-- Mobile Nav Bar -->
         <div id="navOverlay" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
               <a href="index.html">Home</a>
               <a href="about_me.html">About Me</a>
-              <a href="motion.html">Motion</a>
-              <a href="graphics.html">Graphics</a>
-              <a href="contact.html">Contact Me</a>
+			  <a href="work.html">Work</a>	
+              <!--<a href="contact.html">Contact</a>-->
             </div>
         </div>
           <header class="menu">
-            <span style="color:#fff; font-size:45px; cursor:pointer; padding: 15px; float:right;" onclick="openNav()">&#9776;</span>
+            <span style="color:#512DA8; font-size:45px; cursor:pointer; padding: 15px; float:right;" onclick="openNav()">&#9776;</span>
           </header>
-    </nav>
-    <div class="about-me">
-      <h1>Who Am I?</h1>
-      <span class="border"></span>
+	</nav>
+    <div class="about_me">
+      <h1 class="section__title section__title--intro" id="about-me">Who Am I?</h1>
+      <span class="border" id="border-2"></span>
+    </div>
+    <div class="main-content" id="content-2">
       <div class="pic">
-        <img src="images/Robby_Photo_ID.jpg" alt="me">
+        <img src="images/me.jpg" alt="me">
       </div>
+      <section class="desc">
+        <h3>Greetings, you've stumbled across my portfolio website. My name is Robert Turner, but I'll also go by Robby, Bob, Bert, etc. I'm not picky. Currently, I am a Master's student at IUPUI, with my focus in Motion Design and User Interface Design.</h3>
+      </section>
+      <section class="desc2">
+        <h3>As my portfolio suggests, when it comes to Computer Graphics as a whole, I'm fascinated by the many different paths of creativity that exist, whether it be Graphic Design, Motion Graphics, Web Design, etc.</h3>
+      </section>
+      <section class="desc3">
+        <h3>Currently, I am passionate about creating animations and graphics that are eye-catching and useful for promotion and self-identification. My plan is to approach the world of creativity and aesthetics with an analytical, logical mindset, as behind every great design, there is a rationale to how it came to be.  In addition, I use my gifts of communication, translating them to communicating visually through still and motion graphics, not just written word on the page. In a company, I value being a part of a close-knit group working collaboratively to generate the next great idea.</h3>
+      </section>
     </div>
-    <div class="section">
-      <span class="border"></span>
-      <p>Hello, my name is Robert Turner, and I am a senior at Purdue University, majoring in Computer Graphics Technology.</p>
-    </div>
-    <div class="section">
-      <span class="border"></span>
-      <p>As my portfolio suggests, when it comes to Computer Graphics as a whole, I'm fascinated by the many different paths of creativity that exist, whether it be Graphic Design, Motion Graphics, Web Design, etc.</p>
-    </div>
-    <div class="section">
-      <span class="border"></span>
-      <p>Currently, I am passionate about creating animations and graphics that are eye-catching and useful for promotion and self-identification. My plan is to approach the world of creativity and aesthetics with an analytical, logical mindset, as behind every great design, there is a rationale to how it came to be.  In addition, I use my gifts of communication, translating them to communicating visually through still and motion graphics, not just written word on the page. In a company, I value being a part of a close-knit group working collaboratively to generate the next great idea.</p>
-      <span class="border"></span>
-    </div>
-    <div class="footer-holder">
-      <div class="footer col-md-12">
-        <h3>Designed and Developed by Robby Turner 2019</h3>
-      </div>
-    </div>
+    <span class="border"></span>
+	</section>
+  <section class="footer">
+		<div class="columns">
+          <div class="footer-col">
+			 <p>Designed + Developed by Robby Turner</p>
+          </div>
+          <div class="footer-col">
+			 <h3>Contact</h3>
+			  <ul class="contact-list">
+			  	<li class="contact-list__Item">
+			  		<a href="resume.pdf">
+						<i class="far fa-file"></i>
+					</a>
+			  	</li>
+				<li>
+					<a href="mailto:robbyturner593@gmail.com">
+						<i class="far fa-envelope"></i>
+					</a>  
+				</li>  
+			  </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Connect with Me</h3>
+			<ul class="social-list">
+			<li class="social-list__item">
+        		<a href="https://dribbble.com/turne248">
+					<i class="fa fa-dribbble"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+        		<a href="https://github.com/turne248">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+      		<li class="social-list__item">
+        		<a href="http://www.linkedin.com/in/robby-turner-0248">
+					<i class="fa fa-linkedin"></i>
+				</a>
+      		</li>
+		  </ul>
+          </div>
+       </div>
+    </section>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://use.fontawesome.com/739e625e0b.js"></script>
 	<script type="text/javascript">
       //Overlay navigation fill screen when navOverlay menu is clicked
       function openNav() {
