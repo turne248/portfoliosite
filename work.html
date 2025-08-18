@@ -53,7 +53,7 @@
 	 		<div class="work-col">
 	 			<div class="img-wrapper">
 	 				<a href="pvc.html">
-	 				<img src="images/pvc-01.png">
+	 					<img id="bg-1">
 	 				</a>
 	 			</div>
 	 			<h3 class="work_title">Purdue Vinyl Club</h3>
@@ -63,7 +63,7 @@
 	 		<div class="work-col">
 	 			<div class="img-wrapper">
 	 				<a href="kran.html">
-	 					<img src="images/kran-thumb.png">
+	 					<img src="images/krannert-thumb.png">
 	 				</a>
 	 			</div>
 	 			<h3 class="work_title">Krannert Digital Signage</h3>
@@ -85,17 +85,17 @@
 	 		<div class="work-col">
 	 			<div class="img-wrapper">
 	 				<a href="classes.html">
-	 					<img src="images/class-thumb.png">
+	 					<img id="bg-4">
 	 				</a>
 	 			</div>
-	 			<h3 class="work_title">Class Projects</h3>
-	 			<p class="work_desc">A collection of works I completed for courses throughout my time at Purdue that I take pride in.</p>
+	 			<h3 class="work_title">Do You Hear Us?</h3>
+	 			<p class="work_desc">Created animations for online interview series</p>
 	 			<p class="work_cat">Illustration / Branding / Typography / Animation</p>
 	 		</div>
 	 		<div class="work-col">
 	 			<div class="img-wrapper">
 	 				<a href="honors.html">
-	 					<img src="images/honors_thumb_2.gif">
+	 					<img id="bg-5">
 	 				</a>
 	 			</div>
 	 			<h3 class="work_title">Honors Scholarly Project</h3>
@@ -105,12 +105,12 @@
 	 		<div class="work-col">
 	 			<div class="img-wrapper">
 	 				<a href="misc.html" title="Miscellaneous">
-	 					<img  id="bg-6">
+	 					<img src="images/misc-thumb.png">
 	 				</a>
 	 			</div>
 	 			<h3 class="work_title">Miscellaneous</h3>
-	 			<p class="work_desc">Created a number of no-stakes designs for fun and to improve my abilities</p>
-	 			<p class="work_cat"></p>
+	 			<p class="work_desc">Personal projects and/or creative work I created for friends</p>
+	 			<p class="work_cat">Graphic Design / Typography / Animation</p>
 	 		</div>
 	 	</div>
 	 </div>
@@ -174,10 +174,18 @@
       document.getElementById("navOverlay").style.height = "0%"; }
       function randombg() {
       	var random=Math.floor(Math.random() * 2) + 0;
-      	var bg = ["images/misc-thumb.png", 
-      	"images/misc-thumb-2.png"
+      	var bg = ["images/pvc-logo.gif", 
+      	"images/pvc-01.png"
       	];
-      document.getElementById("bg-6").src=bg[random]; 
+      	var bg4 = ["images/dyhu-logo.gif", 
+      	"images/dyhu-thumb.png"
+      	];
+      	var bg5 = ["images/honors_thumb_2.gif", 
+      	"images/honors-thumb.png"
+      	];
+      document.getElementById("bg-1").src=bg[random]; 
+      document.getElementById("bg-4").src=bg4[random];
+      document.getElementById("bg-5").src=bg5[random];
       }
 	  </script>
 	</body>
