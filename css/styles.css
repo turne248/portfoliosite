@@ -427,7 +427,11 @@ a  { font-size: var(--fs-a)  }
 	background-position-y: 55%; 
 }
 #nutn {
-	background-image: url('../images/cac-01.png');
+	background-image: url('../images/UpToNoGoodlogo.gif');
+	background-position-y: 25%; 
+}
+#nutn:hover {
+	background-position-y: 55%; 
 }
 #kran {
 	background-image: url('../images/krannert.gif');
