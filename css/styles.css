@@ -447,12 +447,12 @@ a  { font-size: var(--fs-a)  }
 #honors {
 	background-image: url('../images/Title-1.gif');
 }
-#misc {
-	background-image: url('../images/misc-thumb.png');
-    background-position-y: 35% !important;
+#crit {
+	background-image: url('../images/critique.jpg');
+    background-position-y: 25% !important;
 }
-#misc:hover {
-    background-position-y: 65% !important;
+#crit:hover {
+    background-position-y: 75% !important;
 }
 .two {
 
@@ -510,6 +510,7 @@ a  { font-size: var(--fs-a)  }
     opacity: 1;
     text-shadow: 2px 2px rgba(0,0,0,.8);
 }
+	
 @media (max-width: 500px) {
 	.portfolio {
 		display: block;
@@ -519,6 +520,9 @@ a  { font-size: var(--fs-a)  }
 		padding: 8em 0em;
 		margin-bottom: 2em;
 		width: 100%;
+	}
+	#honors {
+		margin-top: 2em;
 	}
 }
 /* */
@@ -695,6 +699,11 @@ i {
 	background-color: var(--clr-accent3);
 	box-shadow: 0px 2px 2px 2px rgb(25, 54, 79);
 	padding: .2em;
+}
+@media (max-width: 1024px) {
+	#header-crit {
+		background-size: cover !important;
+	}
 }
 @media (max-width: 871px) {
 	#content-2 {
@@ -1038,6 +1047,16 @@ button {
 	margin-bottom: 4em;
 	margin-top: 0em;
 }
+.work_cat button {
+	display: inline-block;
+    margin: 5px 1%;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: var(--clr-accent3);
+    border: none;
+    width: auto;
+}
 @media (max-width:600px) {
 	.work_title	{
 		text-align: center;
@@ -1079,8 +1098,14 @@ button {
 	background-size: 100%;
 }
 #header-misc {
-	background-image: url("../images/droid.jpg");
+	background-image: url("../images/droidTitle_fx_vhs.png");
 	background-position-y: 35%;
+}
+#header-crit {
+	background-image: url("../images/header-crit.png");
+	background-position-y: 35%;
+	background-size: contain;
+	background-position-x: 50%;
 }
 .header-img {
 	margin-top: 0em;
@@ -1213,7 +1238,20 @@ button {
 	color: var(--clr-footer);
 }
 #sixth {
-	background-image: url("../images/droid.jpg");
+	background-image: url("../images/critiqueapp-bg.jpg");
+    background-color: #0000003b;
+    background-blend-mode: color-burn;
+}
+#sixth a {
+	color: var(--clr-text);
+	opacity: 50%;
+}
+#sixth:hover {
+    filter: grayscale(1);
+}
+#sixth a:hover{
+	opacity: 1;
+	color: #000;
 }
 .project-details {
 	display: block;
